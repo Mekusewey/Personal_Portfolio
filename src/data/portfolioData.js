@@ -48,12 +48,12 @@ export const projectsData = [
         demo: "#",
 
         images: [
-        "/login.png",
-        "/dashboard.png",
-        "/comlab.png",
-        "/sched.png",
-        "/user.png",
-        "/req.png",
+            "/login.PNG",
+            "/dashboard.PNG",
+            "/comlab.PNG",
+            "/sched.PNG",
+            "/user.PNG",
+            "/req.PNG",
         ]
     },
 
