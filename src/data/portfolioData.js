@@ -55,6 +55,22 @@ export const projectsData = [
             "/user.PNG",
             "/req.PNG",
         ]
-    },
-
+    },      
 ];
+
+export const personalInterests = {
+    hobbies: ["Anime" , "Music", "Guitar", "Movies", "Sleep"],
+    music: ["Rock", "Indie Rock", "Alternative Rock, Jazz"],
+    profileImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1aJxo92Dy0fhVVZ41ntD5B2_2lLOsvv2mV_0a0w-XbQ&s=10", 
+    coverImage: "https://i.pinimg.com/736x/19/67/23/19672351d371ad8cacdbb4def232aca4.jpg",
+    aboutMe: "I just do things that are fun to me :D",
+    spotifyEmbedLink: "https://open.spotify.com/embed/playlist/5w0jJFoieXZXMpdyrHNF7H?utm_source=generator&si=f86ddefd071f4651",
+games: [
+    { name: "Valorant", image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2mvt.png" },
+    { name: "League of Legends", image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co49wj.png" },
+    { name: "Elden Ring", image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co4jni.png" },
+    { name: "Dota 2", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBJCdjb83r8gRg5mkVlmJSBHQ2EjAjFzmfFBxabjNaEg&s=10" },
+    { name: "Counter-Strike 2", image: "https://m.media-amazon.com/images/I/71A9OJZv3NL.jpg" },
+    { name: "Teamfight Tactics", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNfVUTlKk-V_luZxI7_77iFZ8sohbzKC8DVvae7Toit-02XdCD06HKoPc&s=10"}
+    ],
+};

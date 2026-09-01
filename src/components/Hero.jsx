@@ -1,7 +1,12 @@
 import { motion } from "framer-motion";
 import { personalInfo } from "../data/portfolioData";
+import AboutModal from "./ui/AboutModal";
+import { useState } from "react";
 
 export default function Hero() {
+
+    const [isModalOpen, setIsModalOpen] = useState(false)
+
     return (
         <section id="home" className="relative min-h-screen flex flex-col items-center justify-center pt-20 overflow-hidden bg-slate-950">
         <div className="absolute top-0 -left-40 w-96 h-96 bg-cyan-600/20 rounded-full mix-blend-screen filter blur-[100px] opacity-50 animate-blob" />
@@ -36,9 +41,15 @@ export default function Hero() {
             <div className="mt-12 flex justify-center gap-4">
             <a href="#projects" className="relative inline-flex h-14 items-center justify-center overflow-hidden rounded-full bg-slate-100 px-8 font-semibold text-slate-950 transition-all hover:scale-105 hover:bg-white focus:outline-none focus:ring-2 focus:ring-slate-400">
                 My Projects
-            </a>
+                    </a>
+            <button 
+            onClick={() => setIsModalOpen(true)}
+            className="relative inline-flex h-14 items-center justify-center overflow-hidden rounded-full border border-slate-700 bg-slate-900/50 px-8 font-semibold text-slate-300 transition-all hover:scale-105 hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-slate-400 backdrop-blur-sm">
+            Get to Know Me
+          </button>
             </div>
-        </motion.div>
+            </motion.div>
+            <AboutModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
         </section>
     );
 }

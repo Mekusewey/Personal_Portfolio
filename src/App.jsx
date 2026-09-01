@@ -5,6 +5,8 @@ import Skills from './components/Skills';
 import Contact from './components/Contact';
 
 export default function App() {
+
+
   return (
     <div className="bg-slate-950 text-slate-100 min-h-screen font-sans antialiased selection:bg-cyan-500/30">
       <Navbar />
